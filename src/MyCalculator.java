@@ -41,7 +41,7 @@ public class MyCalculator {
 		for(int i=1;i<n;i++)
 			factorial *= i;
 		
-		return factorial;
+		return (n < 0 ? -1 : factorial);
 	}
 	
 	// binary search in an array
