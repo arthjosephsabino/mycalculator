@@ -38,5 +38,20 @@ public class MyCalculatorTest {
 		assertEquals("-1! = error",-1,actual,0.0);
 		
 	}
+	
+	public void testBinarySearch() {
+		MyCalculator mc = new MyCalculator();
+		int[] intArray = new int[]{1,3,4,5,6,8,9}
+		float actual = mc.binarySearch(intArray,4);
+		assertEquals("4 found",4,actual,0.0);
+		
+	}
+	public void testBinarySearch_not() {
+		MyCalculator mc = new MyCalculator();
+		int[] intArray = new int[]{1,3,4,5,6,8,9}
+		float actual = mc.binarySearch(intArray,10);
+		assertEquals("10 not found",1,actual,0.0);
+		
+	}
 
 }
